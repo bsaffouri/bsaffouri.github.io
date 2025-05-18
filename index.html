@@ -3,69 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Breona Saffouri | Portfolio</title>
+    <title>Breona Saffouri | Computer Science Student & Developer</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
             <a href="index.html" class="logo">Breona Saffouri</a>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="media.html">Media</a></li>
-                <li><a href="www.linkedin.com/in/breona-saffouri-5709a2249" target="_blank">LinkedIn</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="https://www.linkedin.com/in/breona-saffouri-5709a2249" target="_blank">LinkedIn</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero" id="home">
             <div class="hero-content">
                 <h1>Hello, I'm <span class="highlight">Breona Saffouri</span></h1>
-                <p class="subtitle">Computer Science Student with interests in Data Science & Software Engineering</p>                <div class="hero-buttons">
-                    <a href="projects.html" class="btn primary">View Projects</a>
-                    <a href="media.html" class="btn secondary">Explore Media</a>
+                <p class="subtitle">Computer Science Student & Developer</p>
+                <p class="location"><i class="fas fa-map-marker-alt"></i> Saint Louis University</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                    <a href="https://www.linkedin.com/in/breona-saffouri-5709a2249" target="_blank" class="btn secondary">Connect with Me</a>
                 </div>
             </div>
         </section>
 
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <h2>About Me</h2>
                 <div class="about-content">
                     <div class="about-text">
-                        <div class="about-text">
-                            <p>I'm a Computer Science student with a passion for data science and software engineering. I love exploring how technology can be used creatively to solve problems and create interesting experiences.</p>
-                            <p>Outside of coding, I'm really into fashion, literature, and taking photos to document moments in my life. I'm currently working on projects that combine my technical skills with my creative interests, including fashion trend analysis and energy infrastructure studies.</p>
-                                <div class="social-links">
-                            <a href="www.linkedin.com/in/breona-saffouri-5709a2249" target="_blank" class="social-icon">LinkedIn</a>
-                            <a href="https://pin.it/CxkdbvVe6" target="_blank" class="social-icon">Pinterest</a>
-                            <a href="https://boxd.it/8YRLd" target="_blank" class="social-icon">Letterboxd</a>
-                            <a href="https://github.com/bsaffouri" target="_blank" class="social-icon">GitHub</a>
+                        <p>I'm focused on analyzing and optimizing data to create impactful solutions. I am specifically interested in healthtech and energy infrastructures.</p>
+                        <p>As a first-generation student, I'm dedicated to making technology more accessible and would love to connect with like-minded professionals.</p>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/breona-saffouri-5709a2249" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://github.com/bsaffouri" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="https://pin.it/CxkdbvVe6" target="_blank" class="social-icon"><i class="fab fa-pinterest"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="featured-projects">
+        <section class="skills" id="skills">
             <div class="container">
-                <h2>Featured Projects</h2>
-                <div class="project-preview">
-                    <div class="project-card">
-                        <h3>Fashion Trend Analysis</h3>
-                        <p>Data-driven insights into fashion trends using Pinterest data.</p>
-                        <a href="projects.html" class="btn small">Learn More</a>
+                <h2>Technical Skills</h2>
+                
+                <div class="skills-categories">
+                    <div class="skills-category">
+                        <h3>Programming Languages</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-python"></i></div>
+                                <div class="skill-name">Python</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-java"></i></div>
+                                <div class="skill-name">Java</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                                <div class="skill-name">HTML/CSS</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-code"></i></div>
+                                <div class="skill-name">C++</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="project-card">
-                        <h3>Energy Infrastructure Analysis</h3>
-                        <p>Exploring renewable energy patterns and infrastructure optimization.</p>
-                        <a href="projects.html" class="btn small">Learn More</a>
+                    
+                    <div class="skills-category">
+                        <h3>Data Science & Tools</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                                <div class="skill-name">SQL</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+                                <div class="skill-name">Data Visualization</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-brain"></i></div>
+                                <div class="skill-name">Machine Learning</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-table"></i></div>
+                                <div class="skill-name">Pandas</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-category">
+                        <h3>Development Tools</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                                <div class="skill-name">Git</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fab fa-github"></i></div>
+                                <div class="skill-name">GitHub</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                                <div class="skill-name">Command Line</div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                                <div class="skill-name">Cloud Services</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="section-link">
-                    <a href="projects.html">View All Projects →</a>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="coming-soon">
+                    <div class="coming-soon-content">
+                        <i class="fas fa-code-branch"></i>
+                        <h3>Projects Coming Soon</h3>
+                        <p>I'm currently working on exciting projects in data science and energy infrastructure analysis. Check back soon to see my latest work!</p>
+                        <p class="projects-in-progress">In progress: Fashion Trend Analysis Dashboard & Energy Infrastructure Optimization</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -76,5 +145,7 @@
             <p>&copy; 2025 Breona Saffouri. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>

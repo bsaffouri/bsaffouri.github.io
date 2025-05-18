@@ -52,16 +52,7 @@ h2 {
     position: relative;
 }
   
-h2::after {
-    content: '';
-    position: absolute;
-    bottom: -0.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
-    background-color: #E3B23C;
-}
+/* REMOVED: The underline after h2 elements */
   
 h3 {
     font-size: 1.5rem;
@@ -189,10 +180,11 @@ nav a:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
   
+/* UPDATED: Making both buttons consistent in styling */
 .button:nth-child(2) {
-    background-color: transparent;
-    color: #E3B23C;
-    border: 1px solid #E3B23C;
+    background-color: #384A3F;
+    color: #F6F9F6;
+    border: 1px solid #446156;
 }
   
 .button:nth-child(2):hover {
@@ -271,10 +263,7 @@ nav a:hover {
     text-align: center;
 }
   
-.skills h2::after {
-    left: 50%;
-    transform: translateX(-50%);
-}
+/* REMOVED: The underline after skills h2 */
   
 .skills-categories {
     margin-top: 2rem;
@@ -313,10 +302,7 @@ nav a:hover {
     text-align: center;
 }
   
-.projects h2::after {
-    left: 50%;
-    transform: translateX(-50%);
-}
+/* REMOVED: The underline after projects h2 */
   
 .coming-soon {
     background-color: #2B372F;
@@ -417,10 +403,7 @@ nav a:hover {
     text-align: center;
 }
   
-.media-section h2::after {
-    left: 50%;
-    transform: translateX(-50%);
-}
+/* REMOVED: The underline after media section h2 */
   
 .media-section.alt-bg {
     background-color: #2B372F;

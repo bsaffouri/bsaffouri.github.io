@@ -1,355 +1,151 @@
-/* Sophisticated Dark Minimalist Style */
-:root {
-  --primary-color: #11120D;     /* Smoky Black from image 1 */
-  --secondary-color: #565449;   /* Olive Drab from image 1 */
-  --accent-color: #78EAE8;      /* Deep teal blue (Wash-Out Denim Blue from image 2 with more teal) */
-  --dark-accent: #8B0000;       /* Muted Tomato Red from image 2 */
-  --text-color: #D8CFBC;        /* Bone from image 1 */
-  --light-text: #FFFDF4;        /* Floral White from image 1 */
-  --background: #11120D;        /* Smoky Black from image 1 */
-  --light-bg: #1E1E1C;          /* Slightly lighter smoky black */
-  --medium-bg: #252520;         /* Medium background for sections */
-  --border-color: #565449;      /* Olive Drab from image 1 */
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Sandy texture background and general improvements */
 body {
   font-family: 'Helvetica', Arial, sans-serif;
-  line-height: 1.6;
+  line-height: 1.8; /* Increased from 1.6 for better readability */
   color: var(--text-color);
   background-color: var(--background);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23565449' fill-opacity='0.05'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   max-width: 900px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-/* Typography */
+/* Improved Typography with Serif Headings */
 h1, h2, h3 {
-  margin-bottom: 1rem;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  margin-bottom: 1.2rem;
   font-weight: 600;
   color: var(--light-text);
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem; /* Larger than before */
   margin-top: 2rem;
+  letter-spacing: 0.5px;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.2rem; /* Larger than before */
   margin-top: 3rem;
   position: relative;
+  letter-spacing: 0.4px;
+}
+
+/* Add left border to sections for visual hierarchy */
+section {
+  position: relative;
+  padding-left: 15px;
+  border-left: 2px solid var(--accent-color);
+  margin-left: 5px;
+}
+
+.skills {
+  border-left: none; /* Remove border for skills section which has different background */
+  padding-left: 20px;
+}
+
+/* Page load animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+body {
+  animation: fadeIn 0.8s ease-out;
+}
+
+section {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+#home { animation-delay: 0.1s; }
+#about { animation-delay: 0.3s; }
+#skills { animation-delay: 0.5s; }
+#projects { animation-delay: 0.7s; }
+
+/* Section heading hover animation */
+h2 {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+h2:hover {
+  transform: translateX(5px);
+  color: var(--accent-color);
 }
 
 h2::after {
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+h2:hover::after {
+  width: 100px;
+}
+
+/* Enhanced skill cards */
+.skill-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-item::before {
   content: '';
   position: absolute;
-  bottom: -0.5rem;
+  top: -100%;
   left: 0;
-  width: 60px;
-  height: 3px;
-  background-color: var(--accent-color);
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(120, 234, 232, 0.2), transparent);
+  transition: top 0.5s ease;
+  z-index: 0;
 }
 
-h3 {
-  font-size: 1.5rem;
-  margin-top: 2rem;
-  color: var(--accent-color);
+.skill-item:hover::before {
+  top: 0;
 }
 
-p {
-  margin-bottom: 1.5rem;
-  font-size: 1.1rem;
+/* Focus states for accessibility */
+a:focus, button:focus, .skill-item:focus-within {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 3px;
 }
 
-a {
-  color: var(--accent-color);
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-a:hover {
-  color: var(--light-text);
-}
-
-/* Header & Navigation */
-header {
-  padding: 1.5rem 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid var(--border-color);
-  margin-bottom: 2rem;
-}
-
+/* Enhanced name link */
 .name-link {
-  font-size: 1.5rem;
+  font-size: 1.8rem; /* Larger than before */
   font-weight: 700;
   color: var(--light-text);
   position: relative;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  letter-spacing: 1px;
 }
 
-.name-link::after {
-  content: '';
-  position: absolute;
-  bottom: -3px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: var(--accent-color);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease;
-}
-
-.name-link:hover::after {
-  transform: scaleX(1);
-}
-
-nav ul {
-  list-style-type: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
-nav li {
-  font-size: 1.1rem;
-}
-
-nav a {
-  font-weight: 500;
-  position: relative;
-  color: var(--text-color);
-}
-
-nav a::after {
-  content: '';
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background-color: var(--accent-color);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease;
-}
-
-nav a:hover {
-  color: var(--light-text);
-}
-
-nav a:hover::after {
-  transform: scaleX(1);
-}
-
-/* Hero Section */
-.hero {
-  padding: 3rem 0;
-  margin-bottom: 3rem;
-}
-
-.subtitle {
-  font-size: 1.5rem;
-  color: var(--accent-color);
-  margin-bottom: 2rem;
-}
-
-.hero-links {
-  display: flex;
-  gap: 1rem;
-  margin-top: 2rem;
-}
-
-.button {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  background-color: var(--medium-bg);
-  color: var(--light-text);
-  font-weight: 500;
-  transition: all 0.3s;
-  border: 1px solid var(--border-color);
-}
-
-.button:hover {
-  background-color: var(--accent-color);
-  color: var(--background);
-  border-color: var(--accent-color);
-}
-
-.button:nth-child(2) {
-  background-color: transparent;
-  color: var(--accent-color);
-  border: 1px solid var(--accent-color);
-}
-
-.button:nth-child(2):hover {
-  background-color: var(--accent-color);
-  color: var(--background);
-}
-
-/* About Section */
-.about {
-  padding-bottom: 3rem;
-  border-bottom: 1px solid var(--border-color);
-}
-
-/* Social Links */
-.social-links {
-  display: flex;
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
-
-.social-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background-color: var(--light-bg);
-  border-radius: 0;
-  transition: all 0.3s;
-  border: 1px solid var(--border-color);
-}
-
-.social-icon svg {
-  width: 20px;
-  height: 20px;
-  fill: var(--text-color);
-  transition: fill 0.3s;
-}
-
-.social-icon:hover {
-  background-color: var(--accent-color);
-  border-color: var(--accent-color);
-  transform: translateY(-3px);
-}
-
-.social-icon:hover svg {
-  fill: var(--background);
-}
-
-/* Skills Section */
-.skills {
-  padding: 3rem 0;
-  background-color: var(--light-bg);
-  margin: 3rem -20px;
-  padding: 3rem 20px;
-}
-
-.skills-categories {
-  margin-top: 2rem;
-}
-
-.skills-category {
-  margin-bottom: 3rem;
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
-
-.skill-item {
-  background-color: var(--medium-bg);
-  padding: 1rem;
-  border: 1px solid var(--border-color);
-  text-align: center;
-  transition: all 0.3s;
-  color: var(--text-color);
-}
-
-.skill-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  background-color: var(--accent-color);
-  color: var(--background);
-  border-color: var(--accent-color);
-}
-
-/* Projects Section */
-.projects {
-  padding: 3rem 0;
-}
-
+/* Enhanced coming soon section */
 .coming-soon {
-  background-color: var(--light-bg);
-  padding: 2rem;
-  border: 1px solid var(--border-color);
-  text-align: center;
-  margin-top: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.projects-in-progress {
-  font-style: italic;
-  color: var(--accent-color);
-  margin-top: 1.5rem;
-  font-weight: 500;
+.coming-soon:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Footer */
-footer {
-  padding: 2rem 0;
-  text-align: center;
-  margin-top: 3rem;
-  border-top: 1px solid var(--border-color);
-  color: var(--text-color);
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1rem;
-  }
-  
-  nav ul {
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  
-  .hero-links {
-    flex-direction: column;
-  }
-  
-  .button {
-    text-align: center;
-  }
-  
-  .skills-grid {
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  }
-}
-
-/* 90s Touches with Dark Theme */
-.skills h2:after, .projects h2:after, .about h2:after {
-  background: linear-gradient(90deg, 
-    var(--accent-color),
-    var(--dark-accent));
-}
-
-.skill-item {
-  position: relative;
-}
-
-.skill-item:before {
+/* Grain/noise texture overlay for more texture */
+body::after {
   content: '';
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  box-shadow: 
-    inset 1px 1px 2px rgba(255, 255, 255, 0.1),
-    inset -1px -1px 2px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23565449' fill-opacity='0.03' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
   pointer-events: none;
+  z-index: 1000;
+  opacity: 0.3;
+}
+
+/* Make content appear above texture */
+header, main, footer {
+  position: relative;
+  z-index: 1;
 }

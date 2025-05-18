@@ -7,23 +7,23 @@
   
 /* Base color palette with stronger specificity */
 :root {
-    --primary-color: #11120D !important;    /* Smoky Black */
-    --secondary-color: #565449 !important;  /* Olive Drab */
-    --accent-color: #B91C1C !important;     /* Deep red instead of teal blue */
-    --dark-accent: #720E0E !important;      /* Darker red */
-    --text-color: #D8CFBC !important;       /* Bone */
-    --light-text: #FFFDF4 !important;       /* Floral White */
-    --background: #11120D !important;       /* Smoky Black */
-    --light-bg: #1E1E1C !important;         /* Slightly lighter smoky black */
-    --medium-bg: #252520 !important;        /* Medium background for sections */
-    --border-color: #565449 !important;     /* Olive Drab */
+    --primary-color: #222120 !important;     /* Off-black */
+    --secondary-color: #565449 !important;   /* Olive drab */
+    --accent-color: #C0B283 !important;      /* Gold/brass */
+    --dark-accent: #6B5B2B !important;       /* Dark gold */
+    --text-color: #D8CFBC !important;        /* Bone */
+    --light-text: #FFFDF4 !important;        /* Floral White */
+    --background: #222120 !important;        /* Off-black */
+    --light-bg: #2E2C2A !important;          /* Slightly lighter black */
+    --medium-bg: #3A3832 !important;         /* Dark brown-gray */
+    --border-color: #565449 !important;      /* Olive drab */
 }
   
 body {
     font-family: 'Helvetica', Arial, sans-serif;
     line-height: 1.8;
     color: #D8CFBC;
-    background-color: #11120D;
+    background-color: #222120;
     max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;
@@ -60,13 +60,13 @@ h2::after {
     transform: translateX(-50%);
     width: 60px;
     height: 3px;
-    background-color: #B91C1C;
+    background-color: #C0B283;
 }
   
 h3 {
     font-size: 1.5rem;
     margin-top: 1.5rem;
-    color: #B91C1C;
+    color: #C0B283;
 }
   
 p {
@@ -74,7 +74,7 @@ p {
 }
   
 a {
-    color: #B91C1C;
+    color: #C0B283;
     text-decoration: none;
 }
   
@@ -140,7 +140,7 @@ nav a:hover {
   
 .subtitle {
     font-size: 1.5rem;
-    color: #B91C1C;
+    color: #C0B283;
     margin-bottom: 1rem;
 }
   
@@ -159,25 +159,25 @@ nav a:hover {
 .button, .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background-color: #252520;
+    background-color: #3A3832;
     color: #FFFDF4;
     border: 1px solid #565449;
 }
   
 .button:hover, .btn:hover {
-    background-color: #B91C1C;
-    color: #11120D;
+    background-color: #C0B283;
+    color: #222120;
 }
   
 .button:nth-child(2) {
     background-color: transparent;
-    color: #B91C1C;
-    border: 1px solid #B91C1C;
+    color: #C0B283;
+    border: 1px solid #C0B283;
 }
   
 .button:nth-child(2):hover {
-    background-color: #B91C1C;
-    color: #11120D;
+    background-color: #C0B283;
+    color: #222120;
 }
   
 /* About Section */
@@ -207,7 +207,7 @@ nav a:hover {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: #1E1E1C;
+    background-color: #2E2C2A;
     border: 1px solid #565449;
 }
   
@@ -218,17 +218,17 @@ nav a:hover {
 }
   
 .social-icon:hover {
-    background-color: #B91C1C;
+    background-color: #C0B283;
 }
   
 .social-icon:hover svg {
-    fill: #11120D;
+    fill: #222120;
 }
   
 /* Skills Section */
 .skills {
     padding: 3rem 0;
-    background-color: #1E1E1C;
+    background-color: #2E2C2A;
     margin: 3rem -20px;
     padding: 3rem 20px;
     text-align: center;
@@ -255,7 +255,7 @@ nav a:hover {
 }
   
 .skill-item {
-    background-color: #252520;
+    background-color: #3A3832;
     padding: 1rem;
     border: 1px solid #565449;
     text-align: center;
@@ -263,8 +263,8 @@ nav a:hover {
 }
   
 .skill-item:hover {
-    background-color: #B91C1C;
-    color: #11120D;
+    background-color: #C0B283;
+    color: #222120;
 }
   
 /* Projects Section */
@@ -279,7 +279,7 @@ nav a:hover {
 }
   
 .coming-soon {
-    background-color: #1E1E1C;
+    background-color: #2E2C2A;
     padding: 2rem;
     border: 1px solid #565449;
     text-align: center;
@@ -288,7 +288,7 @@ nav a:hover {
   
 .projects-in-progress {
     font-style: italic;
-    color: #B91C1C;
+    color: #C0B283;
     margin-top: 1.5rem;
     font-weight: 500;
 }
@@ -300,7 +300,7 @@ nav a:hover {
   
 .project-item {
     margin-bottom: 3rem;
-    background-color: #1E1E1C;
+    background-color: #2E2C2A;
     border: 1px solid #565449;
 }
   
@@ -317,7 +317,7 @@ nav a:hover {
 }
   
 .tag {
-    background-color: #252520;
+    background-color: #3A3832;
     color: #D8CFBC;
     padding: 0.25rem 0.75rem;
     font-size: 0.85rem;
@@ -337,18 +337,18 @@ nav a:hover {
   
 .btn.secondary {
     background-color: transparent;
-    color: #B91C1C;
-    border: 1px solid #B91C1C;
+    color: #C0B283;
+    border: 1px solid #C0B283;
 }
   
 .btn.secondary:hover {
-    background-color: #B91C1C;
-    color: #11120D;
+    background-color: #C0B283;
+    color: #222120;
 }
   
 /* Media page specific */
 .page-header {
-    background-color: #1E1E1C;
+    background-color: #2E2C2A;
     padding: 2rem 0;
     margin-bottom: 2rem;
     text-align: center;
@@ -365,7 +365,7 @@ nav a:hover {
 }
   
 .media-section.alt-bg {
-    background-color: #1E1E1C;
+    background-color: #2E2C2A;
     padding: 2rem 0;
     margin: 0 -20px 3rem;
 }
@@ -376,7 +376,7 @@ nav a:hover {
 }
   
 .media-link-card {
-    background-color: #1E1E1C;
+    background-color: #2E2C2A;
     padding: 2rem;
     border: 1px solid #565449;
     margin-top: 1.5rem;
@@ -388,14 +388,14 @@ nav a:hover {
 }
   
 .media-content {
-    background-color: #252520;
+    background-color: #3A3832;
     padding: 2rem;
     border: 1px solid #565449;
 }
   
 .quote {
     font-style: italic;
-    border-left: 3px solid #B91C1C;
+    border-left: 3px solid #C0B283;
     padding-left: 1rem;
     margin: 1.5rem 0;
     text-align: left;

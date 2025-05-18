@@ -1,14 +1,14 @@
 /* Base styles */
 :root {
-  --primary-color: #4a6fa5;
-  --secondary-color: #166d67;
-  --accent-color: #d0e3ff;
-  --text-color: #333;
-  --light-text: #fff;
-  --background: #fff;
-  --light-bg: #f8f9fa;
-  --border-color: #e0e0e0;
-}
+      --primary-color: #1e3a8a;     /* Rich deep blue - for main elements */
+      --secondary-color: #9d174d;   /* Deep magenta - for secondary elements */
+      --accent-color: #facc15;      /* Bright yellow - for small accents/highlights */
+      --text-color: #1f2937;        /* Dark gray for text */
+      --light-text: #f9fafb;        /* Off-white for text on dark backgrounds */
+      --background: #ffffff;        /* Clean white background */
+      --light-bg: #f3f4f6;          /* Light gray for alternate sections */
+      --border-color: #e5e7eb;      /* Subtle border color */
+  }
 
 * {
   margin: 0;
@@ -452,4 +452,66 @@ footer {
   .media-card, .film-cards {
     flex-direction: column;
   }
+  /* More pronounced box shadows - characteristic of early digital interfaces */
+.project-card, .media-link-card, .media-content {
+  box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--border-color);
+}
+
+/* Geometric navigation underlines */
+nav a {
+  position: relative;
+}
+
+nav a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 3px;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+nav a:hover:after {
+  width: 100%;
+}
+
+/* More geometric buttons with sharp corners */
+.btn {
+  border-radius: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Grid-based layout enhancement */
+.project-preview {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Stronger section dividers */
+section {
+  position: relative;
+}
+
+section:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 4px;
+  background-color: var(--accent-color);
+}
 }

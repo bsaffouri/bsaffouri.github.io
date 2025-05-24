@@ -7,29 +7,36 @@
     <link rel="stylesheet" href="assets/css/reset.css">
 </head>
 <body>
-    <header>
-        <a href="#" class="name-link">Breona Saffouri</a>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="https://www.linkedin.com/in/breona-saffouri-5709a2249" target="_blank">LinkedIn</a></li>
-            </ul>
-        </nav>
+    <header class="terminal-header">
+        <div class="grid-overlay"></div>
+        <div class="scanlines"></div>
+        
+        <div class="glitch-rect rect-1"></div>
+        <div class="glitch-rect rect-2"></div>
+        
+        <div class="code-rain">
+            <div class="rain-column col-1">01000010<br>01110010<br>01100101<br>01101111<br>01101110<br>01100001</div>
+            <div class="rain-column col-2">def init():<br>&nbsp;&nbsp;return<br>self.name<br>self.code</div>
+            <div class="rain-column col-3">SELECT *<br>FROM<br>skills<br>WHERE<br>passion</div>
+        </div>
+        
+        <div class="terminal-content">
+            <div class="terminal-prompt">> system_init --user breona_saffouri</div>
+            <h1 class="terminal-name">BREONA_SAFFOURI</h1>
+            <p class="terminal-title">cs_student.exe<span class="cursor"></span></p>
+        </div>
     </header>
-
-    <main>
-        <section id="home" class="hero">
-            <h1>Breona Saffouri</h1>
-            <p class="subtitle">Computer Science Student</p>
-            <p>Curious Mind, Visual Thinker</p>
-            <div class="hero-links">
-                <a href="#projects" class="button">View Projects</a>
-                <a href="https://www.linkedin.com/in/breona-saffouri-5709a2249" target="_blank" class="button">Connect with Me</a>
-            </div>
-        </section>
-
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">~/portfolio</a>
+            <ul>
+                <li><a href="#about">about</a></li>
+                <li><a href="#skills">skills</a></li>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="https://www.linkedin.com/in/breona-saffouri-5709a2249" target="_blank">linkedin</a></li>
+            </ul>
+        </div>
+    </nav>
         <div class="section-separator"></div>
 
         <section id="about" class="about">
@@ -99,7 +106,7 @@
             <div class="coming-soon">
                 <h3>Projects Coming Soon</h3>
                 <p>I'm currently working on projects in data science and software engineering that reflect both my technical skills and personal interests. Check back soon to see my latest work!</p>
-                <p class="projects-in-progress">In progress: Fashion Trend Analysis Dashboard & Energy Infrastructure Optimization</p>
+                <p class="projects-in-progress">// In progress...</p>
             </div>
         </section>
     </main>

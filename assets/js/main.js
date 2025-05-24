@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling for navigation links
+    //smooths scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Add active class to navigation based on scroll position
     window.addEventListener('scroll', function() {
         const scrollPosition = window.scrollY;
         
@@ -86,4 +85,39 @@ document.addEventListener('DOMContentLoaded', function() {
     function removeHighlight(element) {
         element.style.borderColor = '';
     }
+
+// Terminal effects 9addition)
+document.addEventListener('DOMContentLoaded', function() {
+    // Only run terminal effects if we're on a page with the terminal header
+    const terminalName = document.querySelector('.terminal-name');
+    const prompt = document.querySelector('.terminal-prompt');
+    
+    if (terminalName) {
+        setInterval(() => {
+            if (Math.random() < 0.1) { // 10% chance every interval
+                terminalName.style.transform = `translateX(${Math.random() * 4 - 2}px)`;
+                setTimeout(() => {
+                    terminalName.style.transform = 'translateX(0)';
+                }, 100);
+            }
+        }, 2000);
+    }
+    
+    if (prompt) {
+        // Add typing effect to terminal prompt
+        const originalText = prompt.textContent;
+        prompt.textContent = '';
+        let i = 0;
+        
+        function typeWriter() {
+            if (i < originalText.length) {
+                prompt.textContent += originalText.charAt(i);
+                i++;
+                setTimeout(typeWriter, 50);
+            }
+        }
+        
+        setTimeout(typeWriter, 1000);
+    }
+});
 });

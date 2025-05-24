@@ -86,13 +86,12 @@ document.addEventListener('DOMContentLoaded', function() {
         element.style.borderColor = '';
     }
 
-// Terminal effects 9addition)
-document.addEventListener('DOMContentLoaded', function() {
-    // Only run terminal effects if we're on a page with the terminal header
+    // Terminal effects - Only run if we're on a page with the terminal header
     const terminalName = document.querySelector('.terminal-name');
     const prompt = document.querySelector('.terminal-prompt');
     
     if (terminalName) {
+        // Add random glitch effect to terminal name
         setInterval(() => {
             if (Math.random() < 0.1) { // 10% chance every interval
                 terminalName.style.transform = `translateX(${Math.random() * 4 - 2}px)`;
@@ -119,5 +118,4 @@ document.addEventListener('DOMContentLoaded', function() {
         
         setTimeout(typeWriter, 1000);
     }
-});
 });
